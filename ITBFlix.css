@@ -1,0 +1,42 @@
+*{
+    border: 3px black;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: rgb(168, 166, 166);
+}
+header{
+    background-color: #E03C31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    height: 30%;
+    padding: 10px;
+}
+.container_link{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+
+}
+nav li{
+   list-style: none;
+    text-transform: uppercase;
+}
+.container_peliculas{
+    background-color: gold;
+    display: flex; 
+    flex-direction: row ;
+
+}
+
+.container_actores {
+    background-color: aquamarine;
+    display: flex; 
+    flex-direction: row;
+}
