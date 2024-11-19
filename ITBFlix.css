@@ -1,12 +1,20 @@
-*{
-    border: 3px black;
-    margin: 0px;
-    padding: 0px;
-    
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-body{
-    background-color: rgb(168, 166, 166);
+
+/* General del cuerpo */
+body {
+    color: #000;
+    line-height: 1.6;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
+
+/* Header */
+
 header{
     background-color: #E03C31;
     display: flex;
@@ -14,12 +22,12 @@ header{
     align-items: center;
 }
 .logo{
-    width: 20%;
-    height: 30%;
+    width: 15%;
     padding: 10px;
 }
 .container_link{
     display: flex;
+    margin-top: 100px;
     width: 100vw;
     justify-content: space-around;
 
@@ -28,15 +36,196 @@ nav li{
    list-style: none;
     text-transform: uppercase;
 }
-.container_peliculas{
-    background-color: gold;
-    display: flex; 
-    flex-direction: row ;
 
+nav .container_link li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .container_link li a:hover {
+    color: #85112F;
+}
+
+h2{    
+    text-align: start;
+    margin: 20px;
+    color: #E03C31;
+    text-transform: uppercase;
+}
+.container_peliculas {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+.container_peliculas article {
+    flex: 100%;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.container_peliculas img {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+}
+.container_peliculas h3 {
+    font-size: 1.2em;
+   background-color: #E03C31;
+}
+.container_actores div{
+    display: flex;
+    gap: 10px;
 }
 
 .container_actores {
-    background-color: aquamarine;
+    margin: 20px;
+    background-color: black;
+}
+.container_actores h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.container_actores article {
+    flex: 100%; 
+    text-align: center;
+    color: white; 
+    width: 200px; 
+
+}
+
+.container_actores img {
+    border-radius: 50%; 
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* Festivales y Premios */
+/* Contenedor principal para Festivales y Series */
+.container_festilvales_series {
     display: flex; 
     flex-direction: row;
+    padding: 20px;
+}
+
+/* Estilo individual de Festivales */
+aside {
+    flex: 2;
+    background-color:  #ec867ff5;
+    padding: 15px;
+    min-width: 400px;
+
+}
+aside h2{
+    text-align: center;
+}
+aside h3 {
+    color: #E8484D;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+aside ul {
+    list-style: square inside;
+    margin-left: 0;
+}
+
+.container_series {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 25px; 
+    padding: 20px;
+    width: 100%; 
+}
+.container_series h2{
+    text-align: center;
+}
+/* Artículos individuales de las series */
+.container_series article {
+    padding: 10px; /* Espaciado interno */
+    text-align: start; /* Centra el contenido de texto */
+    width: auto;
+    max-width: calc(25% - 40px); /* Ancho máximo similar al `flex-basis` */
+}
+
+/* Imágenes dentro de los artículos */
+.container_series img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+
+/* Ranking */
+
+main {
+    margin: 20px;
+    padding: 10px;
+    background: black;
+    width: 100%;
+}
+main h2{
+    color: white;
+    text-align: center;
+}
+main ol {
+    margin: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+main li{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #E03C31;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .container_link {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    aside ul {
+        padding-left: 0;
+    }
 }
