@@ -1,234 +1,275 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>ITBFlix</title>
-   <link rel="stylesheet" href="ITBFlix.css">
-   <link rel="icon" type="image/ico" href=".//favicon.ico">
-</head>
-<body>
-   <header>
-      <img src="logo.png" class="logo" />
-      <nav>
-         <ul class="container_link">
-            <li><a href="#Contacto">Contacto</a></li>
-            <li><a href="siteFilms.html">Películas</a></li>
-            <li><a href="entrada.html">Login</a></li>
-            <li><a href="listado.html">listado</a></li>
-            <li><a href="#Actores">Actores</a></li>
-            <li><a href="#Festivales">Festivales</a></li>
-            <li><a href="#Series">Series</a></li>
-            </ul>
-      </nav> 
-   </header>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-   <h2 id="peliculas">Peliculas</h2>
-      <section class="container_peliculas">
-         <article>  
-            <img class= "img-2" src= "./images (1).jpeg" />
-            <h3 class="titulo_pelicula"><a href="siteFilms.html">Avatar 2</a></h3>
-            <p><b>Avatar 2</b> Explora temas de familia, lealtad, ecología y la identidad cultural de los Na'vi. A través de su rica narrativa visual, aborda el respeto por la naturaleza y los conflictos de supervivencia en Pandora.</p>
-            <p class="info_edad"> 12+ supervivenci</p>
-         </article>  
-         <article>
-            <img class= "img-1" src="./images.jpeg" />
-            <h3 class="titulo_pelicula"><a href="siteFilms.html">La primera comunión</a></h3>
-            <p>En la película <b>La primera comunión</b>, se sigue a una niña de 9 años que se prepara para su primera comunión, explorando la inocencia y las expectativas familiares en un contexto de tradición y modernidad. </p>
-            <p class="info_edad">16+ </p>
-         </article>
-         <article>  
-            <img class= "img-3" src= "./images (2).jpeg" />
-            <h3 class="titulo_pelicula"><a href="siteFilms.html">Aquaman</a></h3>
-            <p><b>Aquaman and the Lost Kingdom</b> Sigue a Aquaman enfrentando nuevos desafíos para proteger  su reino y el mundo. La unidad familiar y la importancia de cuidar el medio ambiente.</p>
-            <p class="info_edad">12+ lucha, poder</p>
-         </article>  
-         <article>
-            <img class= "img-4" src= "./images (3).jpeg" />
-            <h3 class="titulo_pelicula">Morbius</h3>
-            <p><b>Morbius</b> Michael Morbius, un científico que se convierte en un vampiro viviente. Explora temas de lucha interna y las consecuencias de obtener poderes sobrehumanos.</p>
-            <p class="info_edad">16+ lucha, superpoderes</p>
-         </article>  
-         <article>
-            <img class= "img-5" src= "./images (4).jpeg" />
-            <h3 class="titulo_pelicula">Alien Romulos</h3>
-            <p><b>Alien Romulus</b> es una película de ciencia ficción que sigue a un grupo de sobrevivientes en un planeta inhóspito tras un encuentro con una amenaza alienígena.</p>
-            <p class="info_edad">16+, supervivencia, miedo y lucha</p>
-         </article>  
-         <article>
-            <img class= "img-6" src= "./images (5).jpeg" />
-            <h3 class="titulo_pelicula">Vidro</h3>
-            <p><b>Vidro</b> Inconcluye la trilogía de <b>Unbreakable y Split</b>, centrándose en la confrontación entre los personajes de David Dunn, Kevin Wendell Crumb y Elijah Price.</p>
-            <p class="info_edad">12+, identidad, poder y locura</p>
-         </article>
-      </section>
-      <section class="container_actores">
-         <h2 id="Actores">Actores</h2>
-         <div>
-            <article>
-               <img class= "desc-0" src= "./descarga.jpeg" />
-               <h3>Johnny Depp</h3>
-               <p>Peli</p>
-            </article>
-            <article>
-               <img class= "desc-1" src="./descarga (1).jpeg" />
-               <h3>Denzel Washington</h3>
-               <p>Peli</p>
-             </article>
-            <article>
-               <img class= "desc-2" src= "./descarga (2).jpeg" />
-               <h3>Harrison Ford</h3>
-               <p>Peli</p>
-             </article>
-            <article>
-               <img class= "desc-3" src= "./descarga (3).jpeg" /> 
-               <h3>Will Smith</h3>
-               <p>Peli</p>
-             </article>
-            <article>
-               <img class= "desc-4" src= "./descarga (4).jpeg" />
-               <h3>Brad Pitt</h3>
-               <p>Peli</p>
-            </article> 
-            <article>
-               <img class= "desc-5" src= "./descarga (5).jpeg" />
-               <h3>Javier Bardem</h3>
-               <p>Peli</p> 
-            </article> 
-            <article>
-               <img class= "desc-6" src= "./descarga (6).jpeg" />
-               <h3>Dwayne Johnson</h3>
-               <p>Peli</p> 
-            </article>
-            <article>
-               <img class= "desc-6" src= "./descarga (7).jpeg" />
-               <h3>Morgan Freeman</h3>
-               <p>Peli</p> 
-            </article>
-         </div>
-      </section>        
+body {
+    color: #000;
+    line-height: 1.6;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 
-<section class="container_festilvales_series">  
-   <aside class="Festivales">
-      <h2 id="Festivales">Fertivales</h2>
-      <h3>Festivales de Cine Más Importantes</h3>
-      <img src="oscar.jpg">
-         <ul>
-            <li>Festival de Cannes</li>
-            <li>Festival de Berlín</li>
-            <li>Festival de Venecia</li>
-            <li>Festival de Sundance</li>
-            <li>Festival de Toronto</li>
-         </ul>
-         <h3>Premios Más Importantes</h3>
-         <img src="oscar.jpg">
-         <ul>
-            <li>Mejor Película <b>Avatar: The Way of Water</b></li>
-            <li>Mejor Actor <b>Joaquin Phoenix</b>(Morbius)</li>
-            <li>Mejor Actriz <b>Jessica Chastain</b> (Vidrio)</li>
-            <li>Mejor Director <b>James Cameron</b> (Avatar: The Way of Water)</li>
-            <li>Mejor Guión <b>M. Night Shyamalan</b> (Vidrio)</li>
-         </ul>
-   </aside>
+header {
+    background-color: #E03C31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-      
+.logo {
+    width: 15%;
+    padding: 10px;
+}
 
-   <section class="container_series">
-      <h2 id="Series">Series</h2>
-       <article>
-         <h3 class="titulo_series">The Wire (Bajo escucha)</h3>
-         <p>Serie de televisión (2002-2008). 5 temporadas. 60 episodios. 
-            Serie que sigue a lo largo de varias temporadas las investigaciones
-               sobre drogas y asesinatos en la ciudad de Baltimore, en especial la de 
-               un grupo de policías contra una red de narcotraficantes dirigida por Avon 
-               Barksdale en el conflictivo barrio de Baltimore Oeste. 
-            Avaliación: <b>8.8</b></p>
-         <img class= "img-1" src="./serie.jpg" />
-         <p class="text">Ver serie</p>
-       </article>  
-      <article>
-         <h3 class="titulo_series">Breaking Bad</h3>
-         <p>Serie de TV (2008-2013). 5 temporadas. 62 episodios. 
-            Tras cumplir 50 años, Walter White (Bryan Cranston), un profesor
-               de química de un instituto de Albuquerque, Nuevo México, se 
-            entera de que tiene un cáncer de pulmón incurable.
-            Avaliación: <b>8.8</b></p>
-         <img class= "img-2" src= "./serie(2).jpg" />
-         <p class="text">Ver serie</p>
-         </article>
-         <article>
-            <h3 class="titulo_series">Los Simpson</h3>
-            <p>Serie de TV (1989-Actualidad). 34 temporadas. Narra la
-                  historia de una peculiar familia (Homer, Marge, Bart, Maggie y 
-                  Lisa Simpson) y otros divertidos personajes de la localidad 
-                  norteamericana de Springfield. Homer, el padre, es un desastroso 
-                  inspector de seguridad de una central nuclear. 
-                  Avaliación: <b>8.6</b></p>
-            <img class= "img-3" src= "./the_simpsons-397676780-msmall.jpg" />
-            <p class="text">Ver serie</p>
-         </article>
-         <article>
-            <h3 class="titulo_series">Juego de Tronos</h3>
-            <p>Serie de TV (2011-2019). 8 temporadas. 73 episodios. 
-               La historia se desarrolla en un mundo ficticio de carácter medieval
-                  donde hay Siete Reinos.
-                  Avaliación: <b>8.5</b> </p>
-            <img class= "img-4" src= "./serie(3).jpg"/>
-            <p class="text">Ver serie</p>
-         </article>
-         <article>
-            <h3 class="titulo_series">Los Soprano</h3>
-            <p>Serie de TV (1999-2007). 6 temporadas. 86 episodios.
-                  Crónica de la vida cotidiana y de las aventuras personales y 
-                  profesionales de una familia mafiosa que vive en Nueva Jersey.
-                  Son gentes sencillas, pero implacables en sus ritos y tradiciones. 
-                  Avaliación: <b>8.5</b></p>
-         <img class= "img-5" src= "./serie(5).jpg" />
-         <p class="text">Ver serie</p>
-         </article>
-         
-         <article>
-            <h3 class="titulo_series">Hermanos de sangre</h3>
-            <p>Miniserie de TV. 10 episodios. Narra la historia de la
-                  Easy Company, un batallón estadounidense del regimiento 506 de paracaidistas,
-                  que luchó en Europa durante la II Guerra Mundial. Incluye entrevistas a los
-                  supervivientes, recuerdos de los periodistas y cartas de los soldados...
-                  Avaliación: <b>8.5</b> </p>
-         <img class= "img-6" src= "./serie(6).jpg" />
-         <p class="text">Ver serie</p>
-         </article>
-   </section> 
-</section> 
-         <main class="container_visto">
-            <section>
-               <h2 id="Lo_más_visto">Lo Más Visto: Ranking de las 10 Películas/Series Más Vistas</h2>
-               <ol>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b>Avatar: The Way of Water</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b> Breaking Bad</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b> Juego de Tronos</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b> Los Soprano</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b> Los Simpson</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /> <b>   Hermanos de sangre</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b>A primera comunión</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b>Morbius</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b>Vidrio</b></li>
-                   <li> <img class= "img-6" src= "./serie(6).jpg" /><b>Alien: Romulus</b></li>
-               </ol> 
-            </section>
-         </main>
-         
-        <footer>
-            <p id="fin pagina">&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-            <p>Dirección: Institut Tecnològic de Barcelona
-               c/ Aiguablava 121, 08033 Barcelona</p>
-            <p id="Contacto">itbflix.info@itbflix.com74923402384</p>
-            <p>Síguenos en las redes sociales:</p>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-            </ul>
-        </footer>
-</body>
-</html>
+.container_link {
+    display: flex;
+    margin-top: 100px;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav .container_link li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.8s;
+    cursor: pointer;
+}
+
+nav .container_link li a:hover {
+    color: #85112F;
+    border-radius: 20px;
+    background-color: black;
+}
+
+h2 {
+    text-align: start;
+    margin: 20px;
+    color: #E03C31;
+    text-transform: uppercase;
+}
+
+.container_peliculas {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.container_peliculas article {
+    flex: 100%;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.container_peliculas img {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+}
+
+.container_peliculas a {
+    all: unset;
+}
+
+.container_peliculas h3 {
+    font-size: 1.2em;
+    background-color: #E03C31;
+}
+
+.titulo_pelicula {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.8s;
+    cursor: pointer;
+}
+
+.titulo_pelicula:hover {
+    color: #E8484D;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.container_actores div {
+    display: flex;
+    gap: 10px;
+}
+
+.container_actores {
+    margin: 20px;
+    background-color: black;
+}
+
+.container_actores h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container_actores article {
+    flex: 100%;
+    text-align: center;
+    color: white;
+    width: 200px;
+}
+
+.container_actores img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.info_edad {
+    background-color: #3f0905;
+    color: white;
+}
+
+.container_festilvales_series {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/* Estilo individual de Festivales */
+aside {
+    flex: 2;
+    background-color: #ec867ff5;
+    padding: 15px;
+    min-width: 400px;
+}
+
+.Festivales {
+    width: 100%;
+}
+
+.Festivales img {
+    width: 100%;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside h3 {
+    color: #E8484D;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.titulo_series {
+    color: #E8484D;
+    font-size: 20px;
+}
+
+aside ul {
+    list-style: square inside;
+    margin-left: 0;
+}
+
+.container_series {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 25px;
+    padding: 20px;
+    width: 100%;
+}
+
+.container_series h2 {
+    text-align: center;
+}
+
+.text {
+    background-color: #E03C31;
+    color: white;
+    transition: color 2s;
+    text-align: right;
+    cursor: pointer;
+}
+
+.text:hover {
+    color: #85112F;
+    border-radius: 20px;
+    background-color: #121212;
+    font-size: large;
+}
+
+/* Artículos individuales de las series */
+.container_series article {
+    padding: 10px;
+    text-align: start;
+    width: auto;
+    max-width: calc(25% - 40px);
+}
+
+.container_series img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ranking */
+main {
+    margin: 20px;
+    padding: 10px;
+    background: black;
+    width: 100%;
+}
+
+main h2 {
+    color: white;
+    text-align: center;
+}
+
+main ol {
+    margin: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+main li {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #E03C31;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+
+    nav .container_link {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    aside ul {
+        padding-left: 0;
+    }
+}
